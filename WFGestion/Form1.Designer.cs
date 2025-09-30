@@ -57,11 +57,11 @@
             this.clbHobbies = new System.Windows.Forms.CheckedListBox();
             this.cbBoletin = new System.Windows.Forms.CheckBox();
             this.tpVisualizacion = new System.Windows.Forms.TabPage();
+            this.lbHora = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btGuardar = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
             this.btLimpiar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbHora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
@@ -373,6 +373,24 @@
             this.tpVisualizacion.Text = "Visualizacion";
             this.tpVisualizacion.UseVisualStyleBackColor = true;
             // 
+            // lbHora
+            // 
+            this.lbHora.AutoSize = true;
+            this.lbHora.Location = new System.Drawing.Point(934, 148);
+            this.lbHora.Name = "lbHora";
+            this.lbHora.Size = new System.Drawing.Size(0, 16);
+            this.lbHora.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(71, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(662, 442);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btGuardar
             // 
             this.btGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -386,7 +404,7 @@
             // btSalir
             // 
             this.btSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.Location = new System.Drawing.Point(1024, 680);
+            this.btSalir.Location = new System.Drawing.Point(1031, 680);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(191, 70);
             this.btSalir.TabIndex = 3;
@@ -396,30 +414,12 @@
             // btLimpiar
             // 
             this.btLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimpiar.Location = new System.Drawing.Point(612, 680);
+            this.btLimpiar.Location = new System.Drawing.Point(620, 680);
             this.btLimpiar.Name = "btLimpiar";
             this.btLimpiar.Size = new System.Drawing.Size(191, 70);
             this.btLimpiar.TabIndex = 4;
             this.btLimpiar.Text = "LIMPIAR";
             this.btLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(71, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(662, 442);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lbHora
-            // 
-            this.lbHora.AutoSize = true;
-            this.lbHora.Location = new System.Drawing.Point(934, 148);
-            this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(0, 20);
-            this.lbHora.TabIndex = 1;
             // 
             // timer1
             // 
