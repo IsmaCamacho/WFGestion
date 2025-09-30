@@ -16,8 +16,8 @@ namespace WFGestion
         {
             InitializeComponent();
             toolTip1.SetToolTip(btGuardar, "Guardar los datos");
-            toolTip1.SetToolTip(btGuardar, "Limpiar formulario");
-            toolTip1.SetToolTip(btGuardar, "Salir del formulario");
+            toolTip1.SetToolTip(btLimpiar, "Limpiar formulario");
+            toolTip1.SetToolTip(btSalir, "Salir del formulario");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
