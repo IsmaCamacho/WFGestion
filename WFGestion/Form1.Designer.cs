@@ -51,10 +51,19 @@
             this.lbFechaNac = new System.Windows.Forms.Label();
             this.nudEdad = new System.Windows.Forms.NumericUpDown();
             this.lbEdad = new System.Windows.Forms.Label();
+            this.cbBoletin = new System.Windows.Forms.CheckBox();
+            this.clbHobbies = new System.Windows.Forms.CheckedListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbPais = new System.Windows.Forms.ComboBox();
+            this.lbPais = new System.Windows.Forms.Label();
+            this.tbCalificar = new System.Windows.Forms.TrackBar();
+            this.lbCalificacion = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbDatos.SuspendLayout();
+            this.tpPreferencias.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalificar)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -102,6 +111,13 @@
             // 
             // tpPreferencias
             // 
+            this.tpPreferencias.Controls.Add(this.lbCalificacion);
+            this.tpPreferencias.Controls.Add(this.tbCalificar);
+            this.tpPreferencias.Controls.Add(this.lbPais);
+            this.tpPreferencias.Controls.Add(this.cbPais);
+            this.tpPreferencias.Controls.Add(this.label1);
+            this.tpPreferencias.Controls.Add(this.clbHobbies);
+            this.tpPreferencias.Controls.Add(this.cbBoletin);
             this.tpPreferencias.Location = new System.Drawing.Point(4, 25);
             this.tpPreferencias.Name = "tpPreferencias";
             this.tpPreferencias.Padding = new System.Windows.Forms.Padding(3);
@@ -289,6 +305,94 @@
             this.lbEdad.TabIndex = 11;
             this.lbEdad.Text = "Fecha de nacimiento:";
             // 
+            // cbBoletin
+            // 
+            this.cbBoletin.AutoSize = true;
+            this.cbBoletin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBoletin.Location = new System.Drawing.Point(451, 25);
+            this.cbBoletin.Name = "cbBoletin";
+            this.cbBoletin.Size = new System.Drawing.Size(298, 33);
+            this.cbBoletin.TabIndex = 0;
+            this.cbBoletin.Text = "¿Suscribirse al boletín?";
+            this.cbBoletin.UseVisualStyleBackColor = true;
+            // 
+            // clbHobbies
+            // 
+            this.clbHobbies.FormattingEnabled = true;
+            this.clbHobbies.Items.AddRange(new object[] {
+            "Viajar",
+            "Ver la tele",
+            "Jugar a futbol",
+            "Leer",
+            "Caminar",
+            "Correr",
+            "Gimnasio",
+            "Programar",
+            "Estudiar inglés",
+            "Tocar la guitarra"});
+            this.clbHobbies.Location = new System.Drawing.Point(34, 126);
+            this.clbHobbies.Name = "clbHobbies";
+            this.clbHobbies.Size = new System.Drawing.Size(369, 395);
+            this.clbHobbies.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Selecciona tus hobbies";
+            // 
+            // cbPais
+            // 
+            this.cbPais.FormattingEnabled = true;
+            this.cbPais.Items.AddRange(new object[] {
+            "Francia",
+            "Portugal",
+            "Inglaterra",
+            "Italia",
+            "Paises Bajos",
+            "Letunia",
+            "Letonia",
+            "Noruega",
+            "Alemania",
+            "Suiza",
+            "Grecia",
+            "Rusia"});
+            this.cbPais.Location = new System.Drawing.Point(540, 349);
+            this.cbPais.Name = "cbPais";
+            this.cbPais.Size = new System.Drawing.Size(331, 24);
+            this.cbPais.TabIndex = 3;
+            // 
+            // lbPais
+            // 
+            this.lbPais.AutoSize = true;
+            this.lbPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPais.Location = new System.Drawing.Point(607, 290);
+            this.lbPais.Name = "lbPais";
+            this.lbPais.Size = new System.Drawing.Size(296, 31);
+            this.lbPais.TabIndex = 4;
+            this.lbPais.Text = "Elige el país de residencia";
+            // 
+            // tbCalificar
+            // 
+            this.tbCalificar.Location = new System.Drawing.Point(953, 340);
+            this.tbCalificar.Name = "tbCalificar";
+            this.tbCalificar.Size = new System.Drawing.Size(405, 56);
+            this.tbCalificar.TabIndex = 5;
+            // 
+            // lbCalificacion
+            // 
+            this.lbCalificacion.AutoSize = true;
+            this.lbCalificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCalificacion.Location = new System.Drawing.Point(965, 290);
+            this.lbCalificacion.Name = "lbCalificacion";
+            this.lbCalificacion.Size = new System.Drawing.Size(382, 25);
+            this.lbCalificacion.TabIndex = 6;
+            this.lbCalificacion.Text = "Califica tú satisfacción con nuestro servicio";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,9 +408,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tbDatos.ResumeLayout(false);
             this.tbDatos.PerformLayout();
+            this.tpPreferencias.ResumeLayout(false);
+            this.tpPreferencias.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalificar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,6 +444,13 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label lbEdad;
         private System.Windows.Forms.NumericUpDown nudEdad;
+        private System.Windows.Forms.CheckBox cbBoletin;
+        private System.Windows.Forms.CheckedListBox clbHobbies;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbPais;
+        private System.Windows.Forms.ComboBox cbPais;
+        private System.Windows.Forms.Label lbCalificacion;
+        private System.Windows.Forms.TrackBar tbCalificar;
     }
 }
 
