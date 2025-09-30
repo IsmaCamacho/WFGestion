@@ -15,6 +15,14 @@ namespace WFGestion
         public Form1()
         {
             InitializeComponent();
+            toolTip1.SetToolTip(btGuardar, "Guardar los datos");
+            toolTip1.SetToolTip(btGuardar, "Limpiar formulario");
+            toolTip1.SetToolTip(btGuardar, "Salir del formulario");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }
